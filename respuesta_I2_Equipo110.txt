@@ -1,2 +1,66 @@
 Aguilar Brandon
 Alvarez Ismael
+
+respuestas:
+Gamma respuesta A: clone el repositorio con, git clone, cree el archivo "NuevoDato.txt" con el comando echo, use git add . para guardar los cambios y por ultimo un git push para actualizar el directorio
+
+B: si puede actualizar su fork al estado de fork de gamma
+
+C gamma si puede actualizar sus datos del Fork al estado del fork de alfa
+
+D:los datos no se pierden sino q se actualizan al momento de actualizar el fork
+
+Comando de Gamma(Brandon Aguilar): Clonar el fork propio desde GitHub al Escritorio
+git clone https://github.com/121aguilarrojas/TP_SO_i2_110.git
+
+Entrar a la carpeta del repositorio
+cd TP_SO_i2_110
+
+Abrir el archivo fork.txt para agregar Nombre, Apellido, IP y Hora
+notepad fork.txt
+
+Registrar el archivo modificado en el área de preparación (Staging)
+git add fork.txt
+
+Guardar el cambio localmente con un mensaje descriptivo
+git commit -m "GAMMA: Agrego mis datos a fork.txt"
+
+Subir el commit al repositorio de GAMMA en GitHub
+
+Comando de Beta (Ismael Alvarez):Salir de la carpeta errónea hacia el Escritorio
+cd ..
+
+Borrar la carpeta que no tenía el repositorio de Git activo
+rm -rf TP_SO_i2_110
+
+Clonar el repositorio original directamente de la cuenta de BETA
+git clone https://github.com/ismaelemiralvarez1234-rgb/TP_SO_i2_110.git
+
+Entrar a la carpeta clonada correctamente
+cd TP_SO_i2_110
+
+Crear y escribir el archivo requerido por la consigna
+notepad NuevoDato.txt
+
+Agregar el nuevo archivo al control de Git
+git add NuevoDato.txt
+
+Confirmar el cambio localmente
+git commit -m "BETA: crea en el repositorio un archivo llamado NuevoDato.txt"
+
+Subir el archivo NuevoDato a la cuenta de GitHub de BETA
+git push origin main
+
+Crear el archivo para la última parte teórica del TP
+notepad respuesta_I2_Equipo110.txt
+
+Registrar el archivo de respuestas inicial con los nombres de los alumnos
+git add respuesta_I2_Equipo110.txt
+
+Hacer el commit del archivo base
+git commit -m "BETA: Crea archivo de respuestas con los nombres"
+
+Subirlo a GitHub para que GAMMA lo pueda descargar
+git push origin main
+
+
